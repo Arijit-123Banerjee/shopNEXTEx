@@ -30,10 +30,15 @@ const NavBar = ({ isOpen, setOpen }) => (
       </div>
     </nav>
     {isOpen && (
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.96 }}>
+      <motion.div
+        initial={{ opacity: 0, y: -900 }}
+        animate={{ opacity: 0.93, y: 0 }}
+        transition={{ duration: 0.4, ease: "easeInOut" }}
+        exit={{ y: 900 }}
+        style={{ willChange: "opacity, transform" }}
+      >
         <div className="h-screen w-full absolute top-0 z-0 bg-[#0a3639] flex flex-col items-center ">
-          {/* Updated z-index to ensure the navigation is on top of other elements */}
-          <ul className="h-screen w-full flex justify-center flex-col items-center gap-4">
+          <ul className="h-screen w-full flex justify-center flex-col items-center gap-2">
             {["HOME", "TESTIMONIALS", "SHOP", "ABOUT", "HELP"].map((text) => (
               <NavLink key={text} text={text} />
             ))}

@@ -14,7 +14,7 @@ const MainSection = () => {
         sophistication, where our curated selection of premium beauty products
         and services awaits.
       </p>
-      <button class="border border-white text-white max-md:w-[30%] max-md:h-[7vh] w-[10%] h-[8vh] shadow-2xl hover:shadow-[#51a7af9c]">
+      <button class="border border-white text-white max-md:w-[30%] max-md:h-[7vh] w-[10%] h-[8vh] shadow-2xl hover:bg-white  hover:text-black">
         View More
       </button>
     </div>

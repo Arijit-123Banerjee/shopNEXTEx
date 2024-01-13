@@ -12,12 +12,12 @@ const App = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 2.3 }}
       >
         <motion.div
-          initial={{ x: -100 }}
+          initial={{ x: -200 }}
           animate={{ x: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
         >
           <div
             className="bg bg-cover bg-no-repeat h-screen bg-fixed relative max-md:bg-[60%] bg-left "
