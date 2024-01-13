@@ -2,7 +2,7 @@ import React from "react";
 import BeautyProduct from "./Components/HeroSectionPage/BeautyProduct";
 import NavBar from "./Components/HeroSectionPage/NavBar";
 
-import BackgroundIMG from "./BackgroundIMG.jpg";
+import BackgroundIMG from "../src/backgroundIMG.jpg";
 
 const App = () => {
   return (
